@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 1200px;
+    background-color: rgb(87, 82, 82);
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 900px;
+      width: 900px;
+      background-color: rgb(11, 156, 125);
+      .list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .item {
+
+          .btn {
+            border: 1px solid rgba(56, 21, 209, 0.466);
+            background-color: rgb(7, 103, 167);
+            padding: 5px;
+            margin: 0 5px;
+            border-radius: 5%;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  body {
+
+    .square {
+      width: 1000px;
+      height: 1000px;
+      .circle {
+        width: 800px;
+        height: 800px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  body {
+
+    .square {
+      width: 720px;
+      height: 800px;
+      .circle {
+        width: 600px;
+        height: 600px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+
+    .square {
+      width: 480px;
+      height: 480px;
+      .circle {
+        width: 400px;
+        height: 400px;
+        .list {
+          flex-direction: column;
+          .item {
+            text-align: center;
+            .btn {
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+
+    .square {
+      width: 320px;
+      height: 320px;
+      .circle {
+        width: 300px;
+        height: 300px;
+        .list {
+          flex-direction: column;
+          .item {
+            text-align: center;
+            .btn {
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+
+    .square {
+      width: 240px;
+      height: 240px;
+      .circle {
+        width: 200px;
+        height: 200px;
+        .list {
+          flex-direction: column;
+          .item {
+            text-align: center;
+            .btn {
+              margin: 5px 0;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
